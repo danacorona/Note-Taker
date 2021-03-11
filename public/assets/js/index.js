@@ -10,7 +10,7 @@ if (window.location.pathname === '/notes') {
   saveNoteBtn = document.querySelector('.save-note');
   newNoteBtn = document.querySelector('.new-note');
   noteList = document.querySelectorAll('.list-container .list-group');
-}
+
 
 // Show an element
 const show = (elem) => {
@@ -39,16 +39,16 @@ const saveNote = (note) =>
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(note),
+    body: JSON.stringify(note)
   });
 
-const deleteNote = (id) =>
-  fetch(`/api/notes/${id}`, {
-    method: 'DELETE',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
+// const deleteNote = (id) =>
+//   fetch(`/api/notes/${id}`, {
+//     method: 'DELETE',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//   });
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
@@ -69,6 +69,7 @@ const handleNoteSave = () => {
     title: noteTitle.value,
     text: noteText.value,
   };
+  console.log(newNote);
   saveNote(newNote).then(() => {
     getAndRenderNotes();
     renderActiveNote();
@@ -178,3 +179,5 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+
+}
