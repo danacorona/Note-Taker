@@ -4,6 +4,10 @@
 
 ## Description
 This Note Taker allows a small business owner to be able to write and save notes so that they can organize their tasks and thoughts needing attention. This note taker will allow you to click on the link to the notes pageand see all of your existing notes on the left side. On the right side, there is an area to add a new note and once completed will allow you to save the note. Once saved, you will see your note appear on the left side with existing notes.
+[See the Deployed Version Here]('https://pure-tundra-48973.herokuapp.com/')
+
+## Walkthrough Video
+![Walkthrough Video](./Walkthrough.gif)
 
 
 ***
@@ -50,5 +54,3 @@ For questions about this project please reach out to me!
 ![Badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ***
-## Walkthrough Video
-![Walkthrough Video](./Walkthrough.gif)
