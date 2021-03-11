@@ -50,3 +50,5 @@ For questions about this project please reach out to me!
 ![Badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ***
+## Walkthrough Video
+![Walkthrough Video](./Walkthrough.gif)
